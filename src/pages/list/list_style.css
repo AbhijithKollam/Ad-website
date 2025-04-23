@@ -1,0 +1,35 @@
+.ads {
+    width: 90%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.view-btn {
+    color: #F50963;
+    border-radius: 30px;
+    border: 1px solid #F50963;
+}
+
+.edit-btn {
+    background-color: #F50963;
+    border-radius: 30px;
+    color: white;
+}
+.image{
+    border-radius: 15px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333
+}
+.description{
+    font-size: 15px;
+    font-weight: 400;
+    color: #667085
+}
+.list-price{
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333
+}

@@ -1,0 +1,37 @@
+.logo-heading {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.para {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.login-btn {
+    background-color: #F50963;
+    border-radius: 30px;
+}
+
+.register-btn {
+    background-color: #F50963;
+    border-radius: 30px;
+    width: 100%;
+    padding: 10px;
+    color: #FFFFFF;
+}
+.main-div{
+    border-radius: 14px;
+    border-color: #DFDFDF;
+}

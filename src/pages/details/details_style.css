@@ -1,0 +1,23 @@
+.price-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+}
+.price {
+    font-size: 36px;
+    font-weight: 600;
+    color: #F50963;
+}
+.overview {
+    font-size: 24px;
+    font-weight: 600;
+    color: #212121;
+}
+.overview-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+}
+.borderd{
+    border: 1px solid #e0cad3 !important;
+}
