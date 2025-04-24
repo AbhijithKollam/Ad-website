@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Ad-website/static/css/main.6be9ba32.css",
+    "main.js": "/Ad-website/static/js/main.a84827d6.js",
+    "static/js/453.dba6b4db.chunk.js": "/Ad-website/static/js/453.dba6b4db.chunk.js",
+    "static/media/mainImage.png": "/Ad-website/static/media/mainImage.ab15ffe2bcdf77bbdca9.png",
+    "static/media/subImage_two.png": "/Ad-website/static/media/subImage_two.05682161b48a38616f9a.png",
+    "static/media/subImage_one.png": "/Ad-website/static/media/subImage_one.9f05b6b1e7ff69b2a424.png",
+    "static/media/side_img.svg": "/Ad-website/static/media/side_img.fd2a3c43e7b33c94a5d6ec83e8ddd13e.svg",
+    "static/media/logo.svg": "/Ad-website/static/media/logo.eedeaa9cf76b02a75cc674dfe771df5b.svg",
+    "static/media/phone.svg": "/Ad-website/static/media/phone.270d5a7f46020353f75dcf6b521f3d8c.svg",
+    "static/media/location.svg": "/Ad-website/static/media/location.12db5bb2c6fb78464641dd64d54c5215.svg",
+    "static/media/Contact.svg": "/Ad-website/static/media/Contact.e546fa84e4cc06d7429e22cf2e1b09ae.svg",
+    "static/media/tag.svg": "/Ad-website/static/media/tag.0e1a69aa6e93b7ebecd4bae219db7987.svg",
+    "static/media/Component 25 (1).svg": "/Ad-website/static/media/Component 25 (1).ba309c7c92ed9e6e852b1019974e245c.svg",
+    "static/media/Component 25.svg": "/Ad-website/static/media/Component 25.164afcb927944020d5d06c4e2aad9254.svg",
+    "index.html": "/Ad-website/index.html",
+    "static/media/eye.svg": "/Ad-website/static/media/eye.a90872628c2530d691a5f413c5d58dd4.svg",
+    "static/media/Youtube.svg": "/Ad-website/static/media/Youtube.8475a1f01293b79c1996a5febb47c340.svg",
+    "static/media/Text.svg": "/Ad-website/static/media/Text.5a8267d6033023d7f1a63621eeaf5615.svg",
+    "static/media/email.svg": "/Ad-website/static/media/email.8d40946ff71faf31e04df32d42e709f4.svg",
+    "main.6be9ba32.css.map": "/Ad-website/static/css/main.6be9ba32.css.map",
+    "main.a84827d6.js.map": "/Ad-website/static/js/main.a84827d6.js.map",
+    "453.dba6b4db.chunk.js.map": "/Ad-website/static/js/453.dba6b4db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6be9ba32.css",
+    "static/js/main.a84827d6.js"
+  ]
+}
