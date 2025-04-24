@@ -6,6 +6,7 @@ import { toast } from 'react-toastify'
 import droppin from '../../assets/account/location.svg'
 import email from '../../assets/account/email.svg'
 import phone from '../../assets/account/phone.svg'
+import { Link } from 'react-router-dom'
 
 const Account = () => {
   const [formData, setFormData] = useState({});
@@ -53,7 +54,7 @@ const Account = () => {
             </p>
           </div>
           <div className='flex absolute top-0 right-0 p-4 gap-4'>
-            <button className='edit-profile-btn px-4 py-1'>Edit Profile</button>
+            <Link to='/profile' className='edit-profile-btn px-4 py-1'>Edit Profile</Link>
           </div>
         </div>
       </div>

@@ -9,12 +9,17 @@ import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [advertisements, setAdvertisements] = useState([])
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 10;
+    const totalPages = Math.ceil(advertisements.length / itemsPerPage);
     const navigate = useNavigate();
 
     useEffect(() => {
         getAllAdv()
     }, [])
-
+    const startIndex = (currentPage - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const visibleAds = advertisements.slice(startIndex, endIndex);
     const getAllAdv = async () => {
         const response = await authInstance.get('/api/advertisements')
         setAdvertisements(response.data)
@@ -37,18 +42,20 @@ const Home = () => {
                     </div>
                     <div class="grid grid-rows-2 gap-2 h-full">
                         <img src={subImage_one} class="w-full h-full object-cover rounded-md" alt='sub' />
-                        <img src={subImage_two} class="w-full h-full object-cover rounded-md" alt='sub'/>
+                        <img src={subImage_two} class="w-full h-full object-cover rounded-md" alt='sub' />
                     </div>
                 </div>
             </div>
             <div>
-                <div className='flex flex-col items-center justify-center mt-15'>
-                    <p className='whats'>WHAT'S NEW</p>
-                    <p className='recommend'>Fresh Recommendations</p>
-                </div>
+                {visibleAds?.length && (
+                    <div className='flex flex-col items-center justify-center mt-15'>
+                        <p className='whats'>WHAT'S NEW</p>
+                        <p className='recommend'>Fresh Recommendations</p>
+                    </div>
+                )}
                 <div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-40 my-10">
-                        {advertisements.map((item) => (
+                        {visibleAds.map((item) => (
 
                             <div className="rounded-xl shadow-md p-4 flex flex-col h-full">
                                 <img
@@ -68,6 +75,25 @@ const Home = () => {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <div className="flex justify-center items-center gap-4 my-6">
+                        <button
+                            disabled={currentPage === 1}
+                            onClick={() => setCurrentPage((prev) => prev - 1)}
+                            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+                        >
+                            Prev
+                        </button>
+                        <span>
+                            Page {currentPage} of {totalPages}
+                        </span>
+                        <button
+                            disabled={currentPage === totalPages}
+                            onClick={() => setCurrentPage((prev) => prev + 1)}
+                            className="px-4 py-2 bg-gray-300 rounded disabled:opacity-50"
+                        >
+                            Next
+                        </button>
                     </div>
                 </div>
             </div>
